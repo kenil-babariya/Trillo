@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="/assets/Images/favicon.png"
+    />
+    <title>trillo — Your all-in-one booking app</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/queries.css" />
+  </head>
+  <body>
+    <div class="main-container">
+      <header class="header">
+        <img src="/assets/Images/logo.png" alt="Trillo-logo" class="logo" />
+        <form action="#" class="search">
+          <input type="text" class="search-input" placeholder="Search hotels" />
+          <button class="search-button">
+            <!-- License: CC Attribution. Made by geakstr: https://github.com/geakstr/entypo-icons -->
+            <svg
+              class="search-icon"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+            >
+              <path
+                d="M17.545 15.467l-3.779-3.779a6.15 6.15 0 0 0 .898-3.21c0-3.417-2.961-6.377-6.378-6.377A6.185 6.185 0 0 0 2.1 8.287c0 3.416 2.961 6.377 6.377 6.377a6.15 6.15 0 0 0 3.115-.844l3.799 3.801a.953.953 0 0 0 1.346 0l.943-.943c.371-.371.236-.84-.135-1.211zM4.004 8.287a4.282 4.282 0 0 1 4.282-4.283c2.366 0 4.474 2.107 4.474 4.474a4.284 4.284 0 0 1-4.283 4.283c-2.366-.001-4.473-2.109-4.473-4.474z"
+              />
+            </svg>
+          </button>
+        </form>
+        <nav class="user-nav">
+          <div class="user-nav-item">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              class="user-nav-item-icon"
+            >
+              <title>bookmark</title>
+              <path
+                d="M14 2v17l-4-4-4 4v-17c0-0.553 0.585-1.020 1-1h6c0.689-0.020 1 0.447 1 1z"
+              ></path>
+            </svg>
+            <span class="user-nav-notification">7</span>
+          </div>
+          <div class="user-nav-item">
+            <svg
+              version="1.1"
+              xmlns="http://www.w3.org/2000/svg"
+              width="20"
+              height="20"
+              viewBox="0 0 20 20"
+              class="user-nav-item-icon"
+            >
+              <title>chat</title>
+              <path
+                d="M5.8 12.2v-6.2h-3.8c-1.1 0-2 0.9-2 2v6c0 1.1 0.9 2 2 2h1v3l3-3h5c1.1 0 2-0.9 2-2v-1.82c-0.064 0.014-0.132 0.021-0.2 0.021l-7-0.001zM18 1h-9c-1.1 0-2 0.9-2 2v8h7l3 3v-3h1c1.1 0 2-0.899 2-2v-6c0-1.1-0.9-2-2-2z"
+              ></path>
+            </svg>
+            <span class="user-nav-notification">13</span>
+          </div>
+          <div class="user-nav_user">
+            <img
+              src="/assets/Images/user.jpg"
+              alt="user-photo"
+              class="user-nav-photo"
+            />
+            <span>Jonas</span>
+          </div>
+        </nav>
+      </header>
+      <div class="main-content">
+        <nav class="sidebar-nav">
+          <ul class="sidebar-nav-list">
+            <li class="sidebar-nav-list-item sidebar-nav-list-item-active">
+              <a href="#" class="sidebar-nav-link">
+                <svg
+                  class="sidebar-nav-icon"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                >
+                  <title>home</title>
+                  <path
+                    d="M18.672 11h-1.672v6c0 0.445-0.194 1-1 1h-4v-6h-4v6h-4c-0.806 0-1-0.555-1-1v-6h-1.672c-0.598 0-0.47-0.324-0.060-0.748l8.024-8.032c0.195-0.202 0.451-0.302 0.708-0.312 0.257 0.010 0.513 0.109 0.708 0.312l8.023 8.031c0.411 0.425 0.539 0.749-0.059 0.749z"
+                  ></path>
+                </svg>
+                <span>Hotel</span>
+              </a>
+            </li>
+            <li class="sidebar-nav-list-item">
+              <a href="#" class="sidebar-nav-link">
+                <svg
+                  class="sidebar-nav-icon"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                >
+                  <title>aircraft-take-off</title>
+                  <path
+                    d="M19.87 6.453c0.119 0.257 0.127 1.29-4.884 3.642l-4.913 2.306c-1.71 0.803-4.191 1.859-5.285 2.151-0.766 0.204-1.497-0.316-1.497-0.316s-2.206-1.975-2.792-2.419c-0.585-0.444-0.535-0.67 0.215-0.91 0.467-0.149 3.13 0.493 4.265 0.78 1.339-0.8 2.562-1.486 3.141-1.798-1.396-1.033-4.008-2.962-4.841-3.55-0.799-0.565 0.010-0.768 0.010-0.768 0.368-0.099 1.162-0.228 1.562-0.144 2.721 0.569 7.263 2.071 7.611 2.186 0.832-0.436 2.128-1.092 2.922-1.465 2.075-0.974 4.327-0.037 4.486 0.305z"
+                  ></path>
+                </svg>
+                <span>Flight</span>
+              </a>
+            </li>
+            <li class="sidebar-nav-list-item">
+              <a href="#" class="sidebar-nav-link">
+                <svg
+                  class="sidebar-nav-icon"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                >
+                  <title>key</title>
+                  <path
+                    d="M17.691 4.725c-0.503-2.977-3.22-4.967-6.069-4.441s-5.256 2.816-4.753 5.795c0.107 0.641 0.408 1.644 0.763 2.365l-5.175 7.723c-0.191 0.285-0.299 0.799-0.242 1.141l0.333 1.971c0.058 0.342 0.372 0.572 0.7 0.514l1.516-0.281c0.328-0.059 0.744-0.348 0.924-0.639l2.047-3.311 0.018-0.022 1.386-0.256 2.39-3.879c0.785 0.139 1.912 0.092 2.578-0.031 2.848-0.526 4.087-3.67 3.584-6.649zM15.166 6.252c-0.784 1.17-1.584 0.346-2.703-0.475-1.119-0.818-2.135-1.322-1.352-2.492s2.326-1.455 3.447-0.635c1.12 0.819 1.391 2.432 0.608 3.602z"
+                  ></path>
+                </svg>
+                <span>Car rental</span>
+              </a>
+            </li>
+            <li class="sidebar-nav-list-item">
+              <a href="#" class="sidebar-nav-link">
+                <svg
+                  class="sidebar-nav-icon"
+                  version="1.1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  viewBox="0 0 20 20"
+                >
+                  <title>map</title>
+                  <path
+                    d="M19.447 3.718l-6-3c-0.281-0.141-0.613-0.141-0.895 0l-5.63 2.815-5.606-1.869c-0.306-0.102-0.64-0.051-0.901 0.138s-0.415 0.49-0.415 0.811v13.001c0 0.379 0.214 0.725 0.553 0.894l6 3c0.141 0.070 0.294 0.106 0.447 0.106s0.307-0.035 0.447-0.106l5.63-2.814 5.606 1.869c0.305 0.1 0.64 0.049 0.901-0.139s0.415-0.49 0.415-0.81v-13.002c0.001-0.379-0.213-0.725-0.552-0.894zM8 5.231l4-2v11.763l-4 2v-11.763zM2 4l4 1.333v11.661l-4-2v-10.994zM18 16.227l-4-1.334v-11.662l4 2v10.996z"
+                  ></path>
+                </svg>
+                <span>Tours</span>
+              </a>
+            </li>
+          </ul>
+          <div class="notice">
+            <span> © 2017 by trillo. All right reserved. </span>
+            <div class="social-network">
+              <svg
+                class="social-network-icon"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
+                <title>facebook</title>
+                <path
+                  d="M17 1h-14c-1.1 0-2 0.9-2 2v14c0 1.101 0.9 2 2 2h7v-7h-2v-2.475h2v-2.050c0-2.164 1.212-3.684 3.766-3.684l1.803 0.002v2.605h-1.197c-0.994 0-1.372 0.746-1.372 1.438v1.69h2.568l-0.568 2.474h-2v7h4c1.1 0 2-0.899 2-2v-14c0-1.1-0.9-2-2-2z"
+                ></path>
+              </svg>
+              <svg
+                class="social-network-icon"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
+                <title>instagram</title>
+                <path
+                  d="M17 1h-14c-1.1 0-2 0.9-2 2v14c0 1.101 0.9 2 2 2h14c1.1 0 2-0.899 2-2v-14c0-1.1-0.9-2-2-2zM9.984 15.523c3.059 0 5.538-2.481 5.538-5.539 0-0.338-0.043-0.664-0.103-0.984h1.581v7.216c0 0.382-0.31 0.69-0.693 0.69h-12.614c-0.383 0-0.693-0.308-0.693-0.69v-7.216h1.549c-0.061 0.32-0.104 0.646-0.104 0.984 0 3.059 2.481 5.539 5.539 5.539zM6.523 9.984c0-1.912 1.55-3.461 3.462-3.461s3.462 1.549 3.462 3.461-1.551 3.462-3.462 3.462c-1.913 0-3.462-1.55-3.462-3.462zM16.307 6h-1.615c-0.382 0-0.692-0.312-0.692-0.692v-1.617c0-0.382 0.31-0.691 0.691-0.691h1.615c0.384 0 0.694 0.309 0.694 0.691v1.616c0 0.381-0.31 0.693-0.693 0.693z"
+                ></path>
+              </svg>
+              <svg
+                class="social-network-icon"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
+                <title>twitter</title>
+                <path
+                  d="M17.316 6.246c0.008 0.162 0.011 0.326 0.011 0.488 0 4.99-3.797 10.742-10.74 10.742-2.133 0-4.116-0.625-5.787-1.697 0.296 0.035 0.596 0.053 0.9 0.053 1.77 0 3.397-0.604 4.688-1.615-1.651-0.031-3.046-1.121-3.526-2.621 0.23 0.043 0.467 0.066 0.71 0.066 0.345 0 0.679-0.045 0.995-0.131-1.727-0.348-3.028-1.873-3.028-3.703 0-0.016 0-0.031 0-0.047 0.509 0.283 1.092 0.453 1.71 0.473-1.013-0.678-1.68-1.832-1.68-3.143 0-0.691 0.186-1.34 0.512-1.898 1.861 2.285 4.644 3.787 7.781 3.945-0.064-0.277-0.097-0.564-0.097-0.861 0-2.084 1.689-3.773 3.774-3.773 1.086 0 2.067 0.457 2.756 1.191 0.859-0.17 1.667-0.484 2.397-0.916-0.282 0.881-0.881 1.621-1.66 2.088 0.764-0.092 1.49-0.293 2.168-0.594-0.506 0.758-1.146 1.422-1.884 1.953z"
+                ></path>
+              </svg>
+              <svg
+                class="social-network-icon"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
+                <title>youtube</title>
+                <path
+                  d="M10 2.3c-9.828 0-10 0.874-10 7.7s0.172 7.7 10 7.7 10-0.874 10-7.7-0.172-7.7-10-7.7zM13.205 10.334l-4.49 2.096c-0.393 0.182-0.715-0.022-0.715-0.456v-3.948c0-0.433 0.322-0.638 0.715-0.456l4.49 2.096c0.393 0.184 0.393 0.484 0 0.668z"
+                ></path>
+              </svg>
+            </div>
+          </div>
+        </nav>
+
+        <main class="main-view">
+          <div class="hotel-gallery">
+            <figure>
+              <img
+                src="/assets/Images/hotel-1.jpg"
+                alt="image of hotel 1"
+                class="gallery-img"
+              />
+            </figure>
+            <figure>
+              <img
+                src="/assets/Images/hotel-2.jpg"
+                alt="image of hotel 2"
+                class="gallery-img"
+              />
+            </figure>
+            <figure>
+              <img
+                src="/assets/Images/hotel-3.jpg"
+                alt="image of hotel 3"
+                class="gallery-img"
+              />
+            </figure>
+          </div>
+          <div class="hotel-overview">
+            <h1 class="overview-heading">Hotel Las Palmas</h1>
+            <div class="overview-stars">
+              <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                class="overview-stars-icon"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
+                <title>star</title>
+                <path
+                  d="M10 1.3l2.388 6.722h6.412l-5.232 3.948 1.871 6.928-5.439-4.154-5.438 4.154 1.87-6.928-5.233-3.948h6.412l2.389-6.722z"
+                ></path>
+              </svg>
+              <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                class="overview-stars-icon"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
+                <title>star</title>
+                <path
+                  d="M10 1.3l2.388 6.722h6.412l-5.232 3.948 1.871 6.928-5.439-4.154-5.438 4.154 1.87-6.928-5.233-3.948h6.412l2.389-6.722z"
+                ></path>
+              </svg>
+              <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                class="overview-stars-icon"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
+                <title>star</title>
+                <path
+                  d="M10 1.3l2.388 6.722h6.412l-5.232 3.948 1.871 6.928-5.439-4.154-5.438 4.154 1.87-6.928-5.233-3.948h6.412l2.389-6.722z"
+                ></path>
+              </svg>
+              <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                class="overview-stars-icon"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
+                <title>star</title>
+                <path
+                  d="M10 1.3l2.388 6.722h6.412l-5.232 3.948 1.871 6.928-5.439-4.154-5.438 4.154 1.87-6.928-5.233-3.948h6.412l2.389-6.722z"
+                ></path>
+              </svg>
+              <svg
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                class="overview-stars-icon"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
+                <title>star</title>
+                <path
+                  d="M10 1.3l2.388 6.722h6.412l-5.232 3.948 1.871 6.928-5.439-4.154-5.438 4.154 1.87-6.928-5.233-3.948h6.412l2.389-6.722z"
+                ></path>
+              </svg>
+            </div>
+            <div class="overview-location">
+              <svg
+                class="overview-location-icon"
+                version="1.1"
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+              >
+                <title>location-pin</title>
+                <path
+                  d="M10 2.009c-2.762 0-5 2.229-5 4.99 0 4.774 5 11 5 11s5-6.227 5-11c0-2.76-2.238-4.99-5-4.99zM10 9.76c-1.492 0-2.7-1.209-2.7-2.7s1.208-2.7 2.7-2.7c1.49 0 2.699 1.209 2.699 2.7s-1.209 2.7-2.699 2.7z"
+                ></path>
+              </svg>
+              <button class="btn">Albufeira, Portugal</button>
+            </div>
+            <div class="overview-votes">
+              <div class="overview-votes-average">8.6</div>
+              <div class="overview-votes-total">436 votes</div>
+            </div>
+          </div>
+
+          <div class="hotel-details">
+            <div class="description">
+              <p class="description-paragraph-1">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi
+                nisi dignissimos debitis ratione sapiente saepe. Accusantium
+                cumque, quas, ut corporis incidunt deserunt quae architecto
+                voluptate.
+              </p>
+              <p>
+                Accusantium cumque, quas, ut corporis incidunt deserunt quae
+                architecto voluptate delectus, inventore iure aliquid aliquam.
+              </p>
+              <ul class="description-list">
+                <li class="description-list-item">Close to the beach</li>
+                <li class="description-list-item">Breakfast included</li>
+                <li class="description-list-item">Free airport shuttle</li>
+                <li class="description-list-item">Free wifi il all rooms</li>
+                <li class="description-list-item">
+                  Air conditioning and heating
+                </li>
+                <li class="description-list-item">Pets allowed</li>
+                <li class="description-list-item">We speak all languages</li>
+                <li class="description-list-item">Perfect for families</li>
+              </ul>
+              <div class="description-recommend">
+                <p>Lucy and 3 other friends recommend this hotel.</p>
+                <div class="recommend-images">
+                  <img
+                    class="friend-img"
+                    src="/assets/Images/user-3.jpg"
+                    alt="friend 1"
+                  />
+                  <img
+                    class="friend-img"
+                    src="/assets/Images/user-4.jpg"
+                    alt="friend 2"
+                  />
+                  <img
+                    class="friend-img"
+                    src="/assets/Images/user-5.jpg"
+                    alt="friend 3"
+                  />
+                  <img
+                    class="friend-img"
+                    src="/assets/Images/user-6.jpg"
+                    alt="friend 4"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="user-reviews">
+              <figure class="review">
+                <blockquote class="review-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+                  doloremque architecto dicta animi, totam, itaque officia ex.
+                </blockquote>
+                <figcaption class="review-user">
+                  <img
+                    src="/assets/Images/user-1.jpg"
+                    alt="user-1 img"
+                    class="review-img"
+                  />
+                  <div class="review-user-div">
+                    <p class="review-user-name">Nick Smith</p>
+                    <p class="review-date">Feb 23rd, 2017</p>
+                  </div>
+                  <div class="review-rating">7.8</div>
+                </figcaption>
+              </figure>
+              <figure class="review">
+                <blockquote class="review-text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+                  doloremque architecto dicta animi.
+                </blockquote>
+                <figcaption class="review-user">
+                  <img
+                    src="/assets/Images/user-2.jpg"
+                    alt="user-2 img"
+                    class="review-img"
+                  />
+                  <div class="review-user-div">
+                    <p class="review-user-name">Mary Thomas</p>
+                    <p class="review-date">Sept 13th, 2017</p>
+                  </div>
+                  <div class="review-rating">9.3</div>
+                </figcaption>
+              </figure>
+              <button class="btn">Show all <span>→</span></button>
+            </div>
+          </div>
+          <div class="cta">
+            <h2 class="cta-heading">
+              Good news! We have 4 free rooms for you selected dates!
+            </h2>
+            <button class="booking-btn">
+              <span class="btn-visible">Book now</span>
+              <span class="btn-invisible">Only 4 rooms left</span>
+            </button>
+          </div>
+        </main>
+      </div>
+    </div>
+  </body>
+</html>
