@@ -364,7 +364,7 @@ body {
   height: 1.2rem;
   background-size: cover;
   margin-right: 0.7rem;
-  mask-image: url(/assets/Images/chevron-thin-right.svg);
+  mask-image: url("../Images/chevron-thin-right.svg");
   mask-size: cover;
   background-color: #eb2f64;
   background-image: none;
